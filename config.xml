@@ -34,11 +34,11 @@
           </default>
           <int>3</int>
           <string>DIST</string>
-          <string>lucid</string>
+          <string>centos/5</string>
           <string>HOME</string>
-          <string>/usr/share/jetty</string>
+          <string>/usr/share/tomcat5</string>
           <string>SYS</string>
-          <string>ubuntu-10.04-x86</string>
+          <string>centos-5.5-x86</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
