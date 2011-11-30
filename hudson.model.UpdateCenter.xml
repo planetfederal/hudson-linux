@@ -2,6 +2,6 @@
 <sites>
   <site>
     <id>default</id>
-    <url>http://updates.hudson-labs.org/update-center.json</url>
+    <url>http://hudson-ci.org/update-center.json</url>
   </site>
 </sites>

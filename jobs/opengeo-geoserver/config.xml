@@ -9,13 +9,14 @@
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>
   <keepDependencies>false</keepDependencies>
+  <creationTime>0</creationTime>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>REPO_PATH</name>
-          <description>The svn repository path to build from. Examples: &quot;trunk&quot;, &quot;tags/2.13&quot;, &quot;branches/2.1.x&quot;, etc... </description>
-          <defaultValue>trunk</defaultValue>
+          <name>DIST_PATH</name>
+          <description></description>
+          <defaultValue>latest</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>REV</name>
@@ -35,21 +36,25 @@
       <hudson.scm.SubversionSCM_-ModuleLocation>
         <remote>http://svn.opengeo.org/suite/trunk/installer/linux/apt</remote>
         <local>.</local>
+        <depthOption>infinity</depthOption>
+        <ignoreExternalsOption>false</ignoreExternalsOption>
       </hudson.scm.SubversionSCM_-ModuleLocation>
     </locations>
-    <useUpdate>true</useUpdate>
-    <doRevert>false</doRevert>
     <excludedRegions></excludedRegions>
     <includedRegions></includedRegions>
     <excludedUsers></excludedUsers>
     <excludedRevprop></excludedRevprop>
     <excludedCommitMessages></excludedCommitMessages>
+    <workspaceUpdater class="hudson.scm.subversion.UpdateUpdater"/>
   </scm>
+  <advancedAffinityChooser>false</advancedAffinityChooser>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
+  <cleanWorkspaceRequired>false</cleanWorkspaceRequired>
   <builders>
     <hudson.tasks.Shell>
       <command>./build_${JOB_NAME}.sh</command>
@@ -86,5 +91,5 @@
     </hudson.plugins.emailext.ExtendedEmailPublisher>
   </publishers>
   <buildWrappers/>
-  <customWorkspace>/var/lib/hudson/jobs/bootstrap/workspace</customWorkspace>
+  <customWorkspace>/var/lib/hudson/jobs/bootstrap/workspace/installer/linux/apt</customWorkspace>
 </project>
