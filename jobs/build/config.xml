@@ -3,13 +3,14 @@
   <actions/>
   <description></description>
   <keepDependencies>false</keepDependencies>
+  <creationTime>0</creationTime>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>REPO_PATH</name>
+          <name>DIST_PATH</name>
           <description></description>
-          <defaultValue>trunk</defaultValue>
+          <defaultValue>latest</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>REV</name>
@@ -25,11 +26,14 @@
     </hudson.model.ParametersDefinitionProperty>
   </properties>
   <scm class="hudson.scm.NullSCM"/>
+  <advancedAffinityChooser>false</advancedAffinityChooser>
   <canRoam>true</canRoam>
   <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers class="vector"/>
   <concurrentBuild>false</concurrentBuild>
+  <cleanWorkspaceRequired>false</cleanWorkspaceRequired>
   <builders/>
   <publishers>
     <hudson.plugins.parameterizedtrigger.BuildTrigger>
