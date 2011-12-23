@@ -16,7 +16,7 @@
         <hudson.model.StringParameterDefinition>
           <name>REPO</name>
           <description></description>
-          <defaultValue>testing</defaultValue>
+          <defaultValue>test</defaultValue>
         </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
