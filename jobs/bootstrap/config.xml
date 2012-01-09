@@ -44,7 +44,7 @@
     </remoteRepositories>
     <branches>
       <hudson.plugins.git.BranchSpec>
-        <name>master</name>
+        <name>dev</name>
       </hudson.plugins.git.BranchSpec>
     </branches>
     <mergeOptions/>
