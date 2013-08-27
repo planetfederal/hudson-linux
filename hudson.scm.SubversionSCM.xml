@@ -3,4 +3,6 @@
   <generation>23</generation>
   <credentials class="hashtable"/>
   <workspaceFormat>8</workspaceFormat>
+  <revisionPolicy>QUEUE_TIME</revisionPolicy>
+  <validateRemoteUpToVar>false</validateRemoteUpToVar>
 </hudson.scm.SubversionSCM_-DescriptorImpl>

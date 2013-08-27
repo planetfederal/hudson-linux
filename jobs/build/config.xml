@@ -42,7 +42,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
           </configs>
-          <projects>opengeo-jai, opengeo-suite-data, opengeo-postgis, opengeo-geoserver, opengeo-suite, opengeo-docs, opengeo-suite-ee</projects>
+          <projects>geoserver, opengeo-webapps, opengeo-tomcat6, opengeo-jai, opengeo-docs, opengeo-suite-client-sdk</projects>
           <condition>SUCCESS</condition>
         </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
       </configs>
