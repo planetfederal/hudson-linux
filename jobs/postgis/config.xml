@@ -28,7 +28,7 @@
         <name>origin</name>
         <uris>
           <org.eclipse.jgit.transport.URIish>
-            <path>opengeo/opengeo-build.git</path>
+            <path>opengeo/suite-build.git</path>
             <user>git</user>
             <port>-1</port>
             <host>github.com</host>
