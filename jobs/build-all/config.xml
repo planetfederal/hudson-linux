@@ -98,7 +98,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
           </configs>
-          <projects>geos, pgadmin3, postgis, proj, gdal, libght, pgpointcloud, geoserver, opengeo-webapps, opengeo-tomcat6, opengeo-jai, opengeo-docs, opengeo-suite-client-sdk</projects>
+          <projects>geos, pgadmin3, postgis, proj, gdal, libght, pgpointcloud, geoserver, opengeo-webapps, opengeo-tomcat6, opengeo-jai, opengeo-docs, opengeo, opengeo-suite-client-sdk</projects>
           <condition>SUCCESS</condition>
         </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
       </configs>
