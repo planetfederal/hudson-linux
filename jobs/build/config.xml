@@ -10,7 +10,7 @@
         <hudson.model.StringParameterDefinition>
           <name>DIST_PATH</name>
           <description></description>
-          <defaultValue>latest</defaultValue>
+          <defaultValue>master</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>REV</name>
@@ -42,7 +42,7 @@
           <configs>
             <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
           </configs>
-          <projects>opengeo-jai, opengeo-suite-data, opengeo-postgis, opengeo-geoserver, opengeo-suite, opengeo-docs, opengeo-suite-ee</projects>
+          <projects>geoserver, opengeo-webapps, opengeo-tomcat, opengeo-jai, opengeo-docs, opengeo-suite-client-sdk</projects>
           <condition>SUCCESS</condition>
         </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
       </configs>
