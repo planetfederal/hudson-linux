@@ -14,16 +14,6 @@
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
         <hudson.model.StringParameterDefinition>
-          <name>CAT</name>
-          <description></description>
-          <defaultValue>dev</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
-          <name>REV</name>
-          <description>The svn revision to build from: Examples: &quot;latest&quot;, &quot;12456&quot;, etc..</description>
-          <defaultValue>latest</defaultValue>
-        </hudson.model.StringParameterDefinition>
-        <hudson.model.StringParameterDefinition>
           <name>REPO</name>
           <description></description>
           <defaultValue>test</defaultValue>
