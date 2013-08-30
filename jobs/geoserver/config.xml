@@ -94,8 +94,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd installer/linux/apt/
-./build_${JOB_NAME}.sh
-./build_geoserver-exts.sh</command>
+./build_${JOB_NAME}.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
