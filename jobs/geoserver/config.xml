@@ -94,7 +94,15 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd installer/linux/rpm/
-./build_${JOB_NAME}.sh</command>
+./build_${JOB_NAME}.sh
+./build_geoserver-cluster.sh
+./build_geoserver-css.sh
+./build_geoserver-csw.sh
+./build_geoserver-gdal.sh
+./build_geoserver-jdbcconfig.sh
+./build_geoserver-mapmeter.sh
+./build_geoserver-script.sh
+./build_geoserver-wps.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
