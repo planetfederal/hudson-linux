@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl>
-  <hudsonUrl>http://packaging-c55-64.dev.opengeo.org:8080/hudson/</hudsonUrl>
+  <hudsonUrl>http://packaging-c62-64.dev.opengeo.org:8080/hudson/</hudsonUrl>
   <smtpAuthUsername>monitor@openplans.org</smtpAuthUsername>
   <smtpAuthPassword>oKW/KsxZ+PE8Wx96qkNKjTj8h8nJ9xN/SSD/5I6aS6A=</smtpAuthPassword>
   <adminAddress>Hudson &lt;monitor@openplans.org&gt;</adminAddress>
