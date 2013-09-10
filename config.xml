@@ -35,7 +35,7 @@
           </default>
           <int>3</int>
           <string>DIST</string>
-          <string>lucid</string>
+          <string>lucid,precise</string>
           <string>HOME</string>
           <string>/usr/share/jetty</string>
           <string>SYS</string>
