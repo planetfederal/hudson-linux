@@ -5,7 +5,7 @@
   <mode>NORMAL</mode>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
-  <systemMessage>Centos 5.5 32 bit Hudson</systemMessage>
+  <systemMessage>Centos 6.2 32 bit Hudson</systemMessage>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -35,11 +35,11 @@
           </default>
           <int>3</int>
           <string>DIST</string>
-          <string>centos/5</string>
+          <string>centos/6</string>
           <string>HOME</string>
-          <string>/usr/share/tomcat5</string>
+          <string>/usr/share/tomcat6</string>
           <string>SYS</string>
-          <string>centos-5.5-x86</string>
+          <string>centos-6.2-x86</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
