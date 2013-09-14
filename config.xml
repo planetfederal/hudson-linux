@@ -40,6 +40,8 @@
           <string>/usr/share/tomcat6</string>
           <string>SYS</string>
           <string>centos-6.2-x86</string>
+          <string>RPMBUILD_TARGET</string>
+          <string>i686</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
