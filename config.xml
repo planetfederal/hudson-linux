@@ -33,7 +33,7 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>3</int>
+          <int>4</int>
           <string>DIST</string>
           <string>centos/6</string>
           <string>HOME</string>
