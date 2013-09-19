@@ -5,7 +5,7 @@
   <mode>NORMAL</mode>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
-  <systemMessage>Fedora 18 32 bit Hudson</systemMessage>
+  <systemMessage>Fedora 18 64 bit Hudson</systemMessage>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -33,15 +33,13 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
-          <int>4</int>
+          <int>3</int>
           <string>DIST</string>
           <string>fedora/18</string>
           <string>HOME</string>
           <string>/usr/share/tomcat6</string>
           <string>SYS</string>
-          <string>fedora-18-x86</string>
-          <string>RPMBUILD_TARGET</string>
-          <string>i686</string>
+          <string>fedora-18-x86_64</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
