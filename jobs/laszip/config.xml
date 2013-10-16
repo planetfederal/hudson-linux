@@ -83,7 +83,7 @@
   <cleanWorkspaceRequired>false</cleanWorkspaceRequired>
   <builders>
     <hudson.tasks.Shell>
-      <command>cd installer/linux/apt/
+      <command>cd installer/linux/rpm/
 ./build_${JOB_NAME}.sh
 </command>
     </hudson.tasks.Shell>
