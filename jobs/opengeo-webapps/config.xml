@@ -96,7 +96,8 @@
       <command>cd installer/linux/rpm/
 ./build_geowebcache.sh
 ./build_geoexplorer.sh
-./build_dashboard.sh</command>
+./build_dashboard.sh
+./build_recipes.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
