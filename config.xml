@@ -40,6 +40,8 @@
           <string>/usr/share/tomcat6</string>
           <string>SYS</string>
           <string>fedora-18-x86_64</string>
+          <string>JAVA_HOME</string>
+          <string>/usr/lib/jvm/java-1.7.0-openjdk.x86_64</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
