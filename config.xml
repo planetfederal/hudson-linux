@@ -40,8 +40,8 @@
           <string>/usr/share/tomcat6</string>
           <string>SYS</string>
           <string>fedora-18-x86</string>
-          <string>RPMBUILD_TARGET</string>
-          <string>i686</string>
+          <string>JAVA_HOME</string>
+          <string>/usr/lib/jvm/java-1.7.0-openjdk</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
