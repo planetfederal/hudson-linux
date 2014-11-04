@@ -22,6 +22,11 @@
           <description></description>
           <defaultValue>test</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>BRANCH</name>
+          <description>Git branch to download artifacts from. Examples: &quot;master&quot;, &quot;4.1.x&quot;, etc...</description>
+          <defaultValue>master</defaultValue>
+        </hudson.model.StringParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
