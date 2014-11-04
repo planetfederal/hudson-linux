@@ -6,6 +6,7 @@
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
   <systemMessage>Ubuntu 10.04 64 bit Hudson</systemMessage>
+  <configuredWorkspaceRoot></configuredWorkspaceRoot>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
@@ -35,7 +36,7 @@
           </default>
           <int>3</int>
           <string>DIST</string>
-          <string>lucid,precise</string>
+          <string>precise,trusty</string>
           <string>HOME</string>
           <string>/usr/share/jetty</string>
           <string>SYS</string>
