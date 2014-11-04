@@ -90,7 +90,7 @@
   </builders>
   <publishers>
     <hudson.plugins.emailext.ExtendedEmailPublisher>
-      <recipientList>builds@opengeo.org</recipientList>
+      <recipientList>builds@boundlessgeo.com</recipientList>
       <configuredTriggers>
         <hudson.plugins.emailext.plugins.trigger.FailureTrigger>
           <email>
