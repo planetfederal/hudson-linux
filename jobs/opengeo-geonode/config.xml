@@ -9,10 +9,20 @@
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>
   <keepDependencies>false</keepDependencies>
-  <creationTime>1381860446163</creationTime>
+  <creationTime>1340036969199</creationTime>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>DIST_PATH</name>
+          <description></description>
+          <defaultValue>latest</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>REV</name>
+          <description>The svn revision to build from: Examples: &quot;latest&quot;, &quot;12456&quot;, etc..</description>
+          <defaultValue>latest</defaultValue>
+        </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>REPO</name>
           <description></description>
@@ -28,7 +38,7 @@
         <name>origin</name>
         <uris>
           <org.eclipse.jgit.transport.URIish>
-            <path>boundlessgeo/suite-build.git</path>
+            <path>opengeo/opengeo-build.git</path>
             <user>git</user>
             <port>-1</port>
             <host>github.com</host>
@@ -84,8 +94,7 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd installer/linux/apt/
-./build_${JOB_NAME}.sh
-</command>
+./build_${JOB_NAME}.sh</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
