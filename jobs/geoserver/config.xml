@@ -108,6 +108,8 @@
 ./build_geoserver-mapmeter.sh
 ./build_geoserver-script.sh
 ./build_geoserver-wps.sh
+./build_geoserver-geopackage.sh
+./build_geoserver-mongodb.sh
 ./build_geoserver-composer.sh</command>
     </hudson.tasks.Shell>
   </builders>
