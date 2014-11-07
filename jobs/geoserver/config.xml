@@ -33,6 +33,16 @@
           <description>Git branch to download artifacts from. Examples: &quot;master&quot;, &quot;4.1.x&quot;, etc...</description>
           <defaultValue>master</defaultValue>
         </hudson.model.StringParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>PROFILE</name>
+          <description>Build profile, basic or enterprise.</description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>basic</string>
+              <string>ee</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
       </parameterDefinitions>
     </hudson.model.ParametersDefinitionProperty>
   </properties>
