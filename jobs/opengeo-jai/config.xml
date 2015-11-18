@@ -9,7 +9,7 @@
     <artifactNumToKeep>-1</artifactNumToKeep>
   </logRotator>
   <keepDependencies>false</keepDependencies>
-  <creationTime>0</creationTime>
+  <creationTime>1447797411537</creationTime>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
@@ -18,9 +18,7 @@
           <description></description>
           <defaultValue>test</defaultValue>
         </hudson.model.StringParameterDefinition>
-      </parameterDefinitions>
-    </hudson.model.ParametersDefinitionProperty>
-    <hudson.model.ChoiceParameterDefinition>
+        <hudson.model.ChoiceParameterDefinition>
           <name>PROFILE</name>
           <description>Build profile, basic or enterprise.</description>
           <choices class="java.util.Arrays$ArrayList">
@@ -30,6 +28,8 @@
             </a>
           </choices>
         </hudson.model.ChoiceParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
   </properties>
   <scm class="hudson.plugins.git.GitSCM">
     <configVersion>1</configVersion>

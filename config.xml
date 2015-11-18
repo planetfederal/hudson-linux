@@ -6,6 +6,7 @@
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
   <systemMessage>Centos 6.3 64 bit Hudson</systemMessage>
+  <configuredWorkspaceRoot></configuredWorkspaceRoot>
   <jdks/>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>

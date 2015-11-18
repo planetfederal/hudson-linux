@@ -1,9 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>Build all packages, including 3rd party externals</description>
+  <description></description>
+  <logRotator>
+    <daysToKeep>-1</daysToKeep>
+    <numToKeep>10</numToKeep>
+    <artifactDaysToKeep>-1</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
   <keepDependencies>false</keepDependencies>
-  <creationTime>0</creationTime>
+  <creationTime>1447276295522</creationTime>
   <properties>
     <hudson.model.ParametersDefinitionProperty>
       <parameterDefinitions>
@@ -14,7 +20,7 @@
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
           <name>REV</name>
-          <description></description>
+          <description>The svn revision to build from: Examples: &quot;latest&quot;, &quot;12456&quot;, etc..</description>
           <defaultValue>latest</defaultValue>
         </hudson.model.StringParameterDefinition>
         <hudson.model.StringParameterDefinition>
@@ -32,7 +38,6 @@
           <description>Build profile, basic or enterprise.</description>
           <choices class="java.util.Arrays$ArrayList">
             <a class="string-array">
-              <string>basic</string>
               <string>ee</string>
             </a>
           </choices>
@@ -103,21 +108,15 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd installer/linux/rpm/
-./build_all.sh</command>
+
+if [ &quot;${PROFILE}&quot; == &quot;ee&quot; ]; then
+  ./build_wpsbuilder.sh
+else
+  echo &quot;WPS Builder is enterprise-only&quot;
+  exit 1
+fi</command>
     </hudson.tasks.Shell>
   </builders>
-  <publishers>
-    <hudson.plugins.parameterizedtrigger.BuildTrigger>
-      <configs>
-        <hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-          <configs>
-            <hudson.plugins.parameterizedtrigger.CurrentBuildParameters/>
-          </configs>
-          <projects>postgresql-9.3, geos, pgadmin3, postgis, proj, libgeotiff, laszip, gdal, ght, pgpointcloud, pdal, geoserver, opengeo-webapps, opengeo-tomcat, opengeo-jai, opengeo-docs, opengeo,opengeo-webapp-sdk, opengeo-wpsbuilder</projects>
-          <condition>SUCCESS</condition>
-        </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>
-      </configs>
-    </hudson.plugins.parameterizedtrigger.BuildTrigger>
-  </publishers>
+  <publishers/>
   <buildWrappers/>
 </project>
